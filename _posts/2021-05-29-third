@@ -1,0 +1,43 @@
+Iteration of An Array
+배열의 반복
+
+---
+layout: post
+title:  "Array 반복"
+---
+
+
+배열과 반복문을 조합하는 경우는 매우 많습니다. 
+
+반복문을 이용해 배열의 요소(element)를 한번씩 출력하기위해는? 
+
+```javascript 
+
+  Let yourNum = [11, 22, 33, 44];
+
+for(let n = 0;  n < yourNum.length;  n++) { 
+console.log(yourNum[n]); 
+
+}
+
+```
+
+ex)  usDollars의 모든 element를 누적해서 더하기 위해 필요한 조건과
+반복할 구문은 ? 
+
+
+ ```javascript
+
+ let usDollars = [1, 5, 10, 20, 100]; 
+ let sum = 0;
+
+for(let n = 0; n < usDollars.length; n++) {
+	// 0 + 1        → sum + usDollars[0]
+	// 1 + 5        → sum + usDollars[1]
+	// 6 + 10
+	// 16 + 20
+	// 36 + 100
+	sum = sum + usDollars[n];
+}
+```
+위에 있는거 처럼 usDollars배열 안에 있는 모든 숫자를 하나씩 더해서 결과는 126입니다.
