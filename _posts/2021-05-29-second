@@ -1,0 +1,25 @@
+---
+layout: post
+title:  " Check Array or Not"
+---
+
+배열인지 아닌지 확인 하는 방법 
+
+이번에는 메서드를 이용해서 주어진 것이 배열인지 아닌지를 찾아내는 방법이다. 
+  Typeof  이라고 하는 메서드는  값이 문자열인지 번호인지 알아내는 방법이 있다.   
+
+```javasctipt 
+
+
+ let words = [‘book’, ‘pencil’, ‘eraser’]; 
+
+//  typeof’문자열'  → ‘string’
+// typeof 123  → ‘number’
+//typeof words → ‘object’   *위에 words를 참조.
+
+```
+
+
+그리고 배열을 확인하는 방법은 Array.isArray()라고 하는 메서드를 사용한다.
+
+```javascript 
