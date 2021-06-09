@@ -1,0 +1,105 @@
+---
+layout: post
+title:  "What is Variable? "
+---
+
+## 변수 (variable)
+
+코드에서 구구단을 구할시 우리는 아래와 같이 작성합니다. 
+
+ex)
+
+```javascript
+//1의 단을 구할시,,,
+console.log(1 * 1);
+console.log(2 * 2);
+console.log(3 * 3);
+console.log(4 * 4);
+console.log(5 * 5);
+console.log(6 * 6);
+console.log(7 * 7);
+console.log(8 * 8);
+console.log(9 * 9);
+```
+
+```
+
+그러나 만약 우리가 새롭게 2나 3단을 연속으로 구해야 할시,  console.log()을 작성해서 첫번째 숫자를 일일이 바꾸는것은  비효율적입니다. 
+
+그래서 우리는 변수(variable)을 활용해서 구구단을 만듭니다.
+
+### variable = a way to handle data
+
+변수를 활용하는 방법을 아래와 같이 하면 간단하게 구구단을 연속적으로 만들수 있습니다.
+
+ex)
+
+```javascript
+let num = 1 // -->이렇게 num이라는 값에 숫자 1을 할당합니다. 
+
+  let num = 1; //이렇게 하면 num의 부분을 1로 변하게 됩니다.
+console.log(num * 1); //1
+console.log(num * 2); //2
+console.log(num * 3); //3
+console.log(num * 4); //4
+console.log(num * 5); //5
+console.log(num * 6); //6
+console.log(num * 7); //7
+console.log(num * 8); //8
+console.log(num * 9); //9
+
+let num = 2; // --> num에 2를 집어넣은 경우, 
+//아래에 있는 num은 2로 변해서, 2의 단을 만들수 있다.
+
+console.log(num * 1); //2
+console.log(num * 2); //4
+console.log(num * 3); //6
+console.log(num * 4); //8
+console.log(num * 5); //10
+console.log(num * 6); //12
+console.log(num * 7); //14
+console.log(num * 8); //16
+console.log(num * 9); //18
+```
+
+이런식으로  간단하게 만들수 있다. 
+
+### 변수를 사용한다는거
+
+먼저 컴퓨터에는 데이터를 보관하는 메모리라는것이 있다. 
+
+그 보관함(메모리)의 크기는 동일하며, 이때 변수는 각 보관함의 이름이라고 보면 된다.
+
+그리고 그 변수(데이터의 이름)을 통해 데이터를 사용(재활용)할수 있다.
+
+### 변수를 사용하는 방법
+
+1. 보관함 확보 
+
+    선언(declaration)
+
+    ex) let age;
+
+2. 보관함에 데이터 저장 
+
+    할당(assignment)
+
+    age = 12;
+
+ 3. 선언과 할당 동시에 가능 
+
+ ex) let age = 12; 
+
+이렇게 3번에 예시 처럼 선언(let)과 할당을 동시에 할수 있다.
+
+그러면 예시를 들어보겠다 .
+
+```jvascript
+let name = 'Lee';
+console.log('Hello' + name); // Hello Lee 
+
+name = 'Kim';
+console.log('Hello' + name); // Hello Kim
+
+//위에 있는거 처럼 한번 선언을 하면 다음부터는 name의 값을 변경할시, let을 사용할 필요는 없다.
+```
